@@ -11,11 +11,11 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "org.scala-lang" % "scala-compiler" % "2.11.7",
-  "org.scala-lang" % "scala-reflect" % "2.11.7",
+  "org.scala-lang" % "scala-compiler" % "2.11.8",
+  "org.scala-lang" % "scala-reflect" % "2.11.8",
   "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.4",
   "com.typesafe.akka" %% "akka-actor" % "2.4.0",
 	"com.jcraft" % "jsch" % "0.1.53"
 )
 
-mainClass in Compile := None
+mainClass in Compile := Some("org.lolhens.sanescan.Main")
